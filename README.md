@@ -1,6 +1,7 @@
 # Hyperbolic Probe
-
-![title](doc/title.png)
+<p align="left">
+  <img src="doc/title.png" width="800" title="title" alt="title">
+</p>
 
 Boli Chen\*, Yao Fu\*, Guangwei Xu, Pengjun Xie, Chuanqi Tan, Mosha Chen, Liping Jing. _Probing BERT in Hyperbolic Spaces_. ICLR 2021. 
 
