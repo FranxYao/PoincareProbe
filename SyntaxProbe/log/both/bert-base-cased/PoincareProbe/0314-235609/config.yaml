@@ -1,0 +1,24 @@
+embedding:
+  name: bert-base-cased
+  task: both # distance, depth, both
+  layer: 7
+  layer_max: 13
+  dir: ./data/dataset/
+  pretrained_bert_dir: bert-base-cased
+log:
+  dir: ./log
+run:
+  num: 5 # run num
+  epoch: 40 # max epoch num
+  batch_size: 32
+  lr: 1e-3
+  stop_lr: 5e-8
+  scheduler:
+    factor: 0.1
+    patience: 0
+probe:
+  name: PoincareProbe
+  c: -1 # hyperbolic space curvature
+  dim_in: 768
+  dim_out: 64
+  dim_hidden: 64

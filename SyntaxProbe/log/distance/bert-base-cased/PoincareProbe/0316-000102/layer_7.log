@@ -1,0 +1,37 @@
+Run: 1 | Epoch: 18
+	Learning Rate: 1.0000000000000004e-08
+Train time in 0 minutes, 24 seconds
+Pred time in 0 minutes, 3 seconds
+	Train Distance Loss: 0.0205	Dev Distance Loss: 0.0209
+	Test UUAS: 0.8360	Test Distance DSpr.: 0.8827
+--------------------------------------------------
+Run: 2 | Epoch: 18
+	Learning Rate: 1.0000000000000004e-08
+Train time in 0 minutes, 25 seconds
+Pred time in 0 minutes, 0 seconds
+	Train Distance Loss: 0.0204	Dev Distance Loss: 0.0209
+	Test UUAS: 0.8398	Test Distance DSpr.: 0.8831
+--------------------------------------------------
+Run: 3 | Epoch: 16
+	Learning Rate: 1.0000000000000004e-08
+Train time in 0 minutes, 25 seconds
+Pred time in 0 minutes, 0 seconds
+	Train Distance Loss: 0.0206	Dev Distance Loss: 0.0209
+	Test UUAS: 0.8384	Test Distance DSpr.: 0.8821
+--------------------------------------------------
+Run: 4 | Epoch: 13
+	Learning Rate: 1.0000000000000004e-08
+Train time in 0 minutes, 25 seconds
+Pred time in 0 minutes, 0 seconds
+	Train Distance Loss: 0.0207	Dev Distance Loss: 0.0211
+	Test UUAS: 0.8373	Test Distance DSpr.: 0.8812
+--------------------------------------------------
+Run: 5 | Epoch: 12
+	Learning Rate: 1.0000000000000004e-08
+Train time in 0 minutes, 25 seconds
+Pred time in 0 minutes, 0 seconds
+	Train Distance Loss: 0.0208	Dev Distance Loss: 0.0211
+	Test UUAS: 0.8361	Test Distance DSpr.: 0.8809
+--------------------------------------------------
+Avg UUAS: 0.8375
+Avg Distance DSpr.: 0.8820
