@@ -1,0 +1,11 @@
+torch==1.6.0
+geoopt>=0.2
+transformers
+numpy
+sklearn
+matplotlib
+PyYAML
+dill
+h5py
+tqdm
+gpustat
