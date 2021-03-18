@@ -1,5 +1,9 @@
 # Hyperbolic Probe
 
+![title](doc/title.png)
+
+Boli Chen\*, Yao Fu\*, Guangwei Xu, Pengjun Xie, Chuanqi Tan, Mosha Chen, Liping Jing. _Probing BERT in Hyperbolic Spaces_. ICLR 2021. 
+
 ## Requirements
 
     $ pip install -r requirements.txt

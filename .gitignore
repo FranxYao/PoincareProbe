@@ -1,0 +1,4 @@
+SyntaxProbe/data/
+SentimentProbe/data/
+__pycache__/
+SyntaxProbe/log/
