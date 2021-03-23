@@ -1,4 +1,3 @@
-# Hyperbolic Probe
 <p align="left">
   <img src="readme-asset/title.png" width="800" title="title" alt="title">
 </p>
