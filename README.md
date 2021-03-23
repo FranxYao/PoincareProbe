@@ -48,11 +48,28 @@ Optimization:
 
 ## Reproduction
 
+### Data preparation
 You will need access to the PTB dataset from [LDC](https://catalog.ldc.upenn.edu/LDC99T42).
 Then use the [scripts from Hewitt](https://github.com/john-hewitt/structural-probes/tree/master/scripts) to preprocess the data. You only need the `convert_splits_to_depparse.sh` and `convert_conll_to_raw.py` file since we will use our own in `SyntaxProbe/data.py` to get BERT embeddings from the current huggingface transformers library (current = 2021.03.19). 
 
 You will need to name the datasets and create folders accordingly, checkout `SyntaxProbe/data.py` for the directory names. 
 
+### Reproducing Table 1 and 2 
 Then use `run.py`, which can be found in the sub-folders `./SyntaxProbe` and `./SentimentProbe`. This would enable you to reproduce Table 1 and Table 2, which are our major results. 
 
 We do not use fixed random seeds. Generally we do not recommend using any fixed seeds. We recommend doing multiple runs for training and observe the mean and variance of the performance. 
+
+### Visualization of Figure 4, 5, 6, 7  
+can be reproduced by modifying the jupyter notebooks. 
+
+## Background Knowledge
+
+Q: if I only know sequence to sequence, but I want to really understand what you are doing, what should I read to get sufficient background knowledge? 
+
+A: to understand our paper, you will need (a) background about dependency parsing, (b) background about hyperbolic geometry, (c) background about probing BERT. 
+
+For parsing, start with [slp chap 14](https://web.stanford.edu/~jurafsky/slp3/14.pdf) to learn what is dependency parsing and read [biaffine](https://arxiv.org/abs/1611.01734) to know what makes a good parser. A good practice is to put the two side by side and do [comparative-contrastive reading](https://writingcenter.unc.edu/tips-and-tools/comparing-and-contrasting/). After reading them, you will know the basics about parsing used in our paper (e.g., the meaning of UUAS in Table 1, the meaning of edges in Figure 3)
+
+For hyperbolic geometry, start with the blog posts about differential geometry ([tensors](https://bjlkeng.github.io/posts/tensors-tensors-tensors/), [manifolds](https://bjlkeng.github.io/posts/manifolds/)). Then read the [Poincare embeddings paper](https://arxiv.org/abs/1705.08039) and a [blog post](https://bjlkeng.github.io/posts/hyperbolic-geometry-and-poincare-embeddings/) about it. After reading them, you should have deep enough knowledge to understand the techniques in our chapter 3. 
+
+For probing syntax in BERT, start with the [structural probe paper](https://www.aclweb.org/anthology/N19-1419/) (this is the primary paper we follow) then [a discussion paper about a probe and a parser](https://arxiv.org/abs/2005.01641) (this paper motivates our heavy discussion about the probe sensitivity in our introduction). 
